@@ -1,24 +1,26 @@
-// Detecting Button Press
+// Event Listener for detecting button press and triggers functions.
 for (var i=0; i<document.querySelectorAll(".drum").length; i++) {
-    document.querySelectorAll(".drum")[i].addEventListener("click", function() {
+    document.querySelectorAll(".drum")[i].addEventListener("click", function() { 
     
-        var buttonInnerHTML= this.innerHTML;
+        var buttonInnerHTML= this.innerHTML; // Stores a corresponding letter(HTML) with each clicked button 
     
-        makeSound(buttonInnerHTML);
+        makeSound(buttonInnerHTML); // Plays the sound for each clicked button based on the letter(HTML)
 
-        buttonAnimation(buttonInnerHTML);
+        buttonAnimation(buttonInnerHTML); // Triggers button animation for each clicked button based on the letter(HTML)
     });
 
 }
 
-// Detecting Keyboard Press
+// Event Listener for detecting keyboard press and triggers same functions. 
 document.addEventListener("keydown", function(event) {
   
-  makeSound(event.key);  
+  makeSound(event.key); // Plays sound for each assigned key on keyboard pressed
 
-  buttonAnimation(event.key);
+  buttonAnimation(event.key); // Triggers button animation for each assigned key on keyboard pressed
 });
 
+
+// Function that assigns a sound to the corresponding letter/button. 
 function makeSound(key) {
     switch (key) {
         case "w":
@@ -48,6 +50,7 @@ function makeSound(key) {
 }
 }
 
+// Function that adds visual animation to each letter/button. 
 function buttonAnimation(currentkey) {
     var activeButton=document.querySelector("." + currentkey);
     activeButton.classList.add("pressed");
