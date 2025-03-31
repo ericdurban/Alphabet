@@ -117,82 +117,82 @@ function makeSoundByKey(key) {
 function makeSoundByLetter(letter) {
     switch(letter) {
         case "A": 
-            var SoundLetter= new Audio('sounds/phonemes/a.mp3'); SoundLetter.play();
+            var SoundLetter= new Audio('sounds/Phonemes/a.mp3'); SoundLetter.play();
             break;
         case "B":
-            var SoundLetter= new Audio('sounds/phonemes/b.mp3'); SoundLetter.play(); 
+            var SoundLetter= new Audio('sounds/Phonemes/b.mp3'); SoundLetter.play(); 
             break;
         case "C":
-            var SoundLetter= new Audio('sounds/phonemes/c.mp3'); SoundLetter.play(); 
+            var SoundLetter= new Audio('sounds/Phonemes/c.mp3'); SoundLetter.play(); 
             break;
         case "D":
-            var SoundLetter= new Audio('sounds/phonemes/d.mp3'); SoundLetter.play(); 
+            var SoundLetter= new Audio('sounds/Phonemes/d.mp3'); SoundLetter.play(); 
             break;
         case "E":
-            var SoundLetter= new Audio('sounds/phonemes/e.mp3'); SoundLetter.play(); 
+            var SoundLetter= new Audio('sounds/Phonemes/e.mp3'); SoundLetter.play(); 
             break;
         case "F":
-            var SoundLetter= new Audio('sounds/phonemes/f.mp3'); SoundLetter.play(); 
+            var SoundLetter= new Audio('sounds/Phonemes/f.mp3'); SoundLetter.play(); 
             break;
         case "G":
-            var SoundLetter= new Audio('sounds/phonemes/g.mp3'); SoundLetter.play(); 
+            var SoundLetter= new Audio('sounds/Phonemes/g.mp3'); SoundLetter.play(); 
             break;
         case "H":
-            var SoundLetter= new Audio('sounds/phonemes/h.mp3'); SoundLetter.play(); 
+            var SoundLetter= new Audio('sounds/Phonemes/h.mp3'); SoundLetter.play(); 
             break;
         case "I":
-            var SoundLetter= new Audio('sounds/phonemes/i.mp3'); SoundLetter.play(); 
+            var SoundLetter= new Audio('sounds/Phonemes/i.mp3'); SoundLetter.play(); 
             break;
         case "J":
-            var SoundLetter= new Audio('sounds/phonemes/j.mp3'); SoundLetter.play(); 
+            var SoundLetter= new Audio('sounds/Phonemes/j.mp3'); SoundLetter.play(); 
             break;
         case "K":
-            var SoundLetter= new Audio('sounds/phonemes/k.mp3'); SoundLetter.play(); 
+            var SoundLetter= new Audio('sounds/Phonemes/k.mp3'); SoundLetter.play(); 
             break;
         case "L":
-            var SoundLetter= new Audio('sounds/phonemes/l.mp3'); SoundLetter.play(); 
+            var SoundLetter= new Audio('sounds/Phonemes/l.mp3'); SoundLetter.play(); 
             break;
         case "M":
-            var SoundLetter= new Audio('sounds/phonemes/m.mp3'); SoundLetter.play(); 
+            var SoundLetter= new Audio('sounds/Phonemes/m.mp3'); SoundLetter.play(); 
             break;
         case "N":
-            var SoundLetter= new Audio('sounds/phonemes/n.mp3'); SoundLetter.play(); 
+            var SoundLetter= new Audio('sounds/Phonemes/n.mp3'); SoundLetter.play(); 
             break;
         case "O":
-            var SoundLetter= new Audio('sounds/phonemes/o.mp3'); SoundLetter.play(); 
+            var SoundLetter= new Audio('sounds/Phonemes/o.mp3'); SoundLetter.play(); 
             break;
         case "P":
-            var SoundLetter= new Audio('sounds/phonemes/p.mp3'); SoundLetter.play(); 
+            var SoundLetter= new Audio('sounds/Phonemes/p.mp3'); SoundLetter.play(); 
             break;
         case "Q":
-            var SoundLetter= new Audio('sounds/phonemes/q.mp3'); SoundLetter.play(); 
+            var SoundLetter= new Audio('sounds/Phonemes/q.mp3'); SoundLetter.play(); 
             break;
         case "R":
-            var SoundLetter= new Audio('sounds/phonemes/r.mp3'); SoundLetter.play(); 
+            var SoundLetter= new Audio('sounds/Phonemes/r.mp3'); SoundLetter.play(); 
             break;
         case "S":
-            var SoundLetter= new Audio('sounds/phonemes/s.mp3'); SoundLetter.play(); 
+            var SoundLetter= new Audio('sounds/Phonemes/s.mp3'); SoundLetter.play(); 
             break;
         case "T":
-            var SoundLetter= new Audio('sounds/phonemes/t.mp3'); SoundLetter.play(); 
+            var SoundLetter= new Audio('sounds/Phonemes/t.mp3'); SoundLetter.play(); 
             break;
         case "U":
-            var SoundLetter= new Audio('sounds/phonemes/u.mp3'); SoundLetter.play(); 
+            var SoundLetter= new Audio('sounds/Phonemes/u.mp3'); SoundLetter.play(); 
             break;
         case "V":
-            var SoundLetter= new Audio('sounds/phonemes/v.mp3'); SoundLetter.play(); 
+            var SoundLetter= new Audio('sounds/Phonemes/v.mp3'); SoundLetter.play(); 
             break;
         case "W":
-            var SoundLetter= new Audio('sounds/phonemes/w.mp3'); SoundLetter.play(); 
+            var SoundLetter= new Audio('sounds/Phonemes/w.mp3'); SoundLetter.play(); 
             break;
         case "X":
-            var SoundLetter= new Audio('sounds/phonemes/x.mp3'); SoundLetter.play(); 
+            var SoundLetter= new Audio('sounds/Phonemes/x.mp3'); SoundLetter.play(); 
             break;
         case "Y":
-            var SoundLetter= new Audio('sounds/phonemes/y.mp3'); SoundLetter.play(); 
+            var SoundLetter= new Audio('sounds/Phonemes/y.mp3'); SoundLetter.play(); 
             break;
         case "Z":
-            var SoundLetter= new Audio('sounds/phonemes/z.mp3'); SoundLetter.play(); 
+            var SoundLetter= new Audio('sounds/Phonemes/z.mp3'); SoundLetter.play(); 
             break;
     }
 }
