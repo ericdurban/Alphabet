@@ -3,6 +3,16 @@ body {
   background-color: #283149;
 }
 
+.centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+} 
+
 h1 {
   font-size: 5rem;
   color: #DBEDF3;
