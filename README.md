@@ -1,24 +1,24 @@
-# DRUM KIT SIMULATION
+# INTERACTIVE ALPHABET SIMULATION
 
-The Drum Kit Simulation is an interactive web-based application that mimics the sounds of a drum kit. The user can simulate drumming by pressing keys on the keyboard or clicking on the virtual drum pads. The app plays corresponding drum sounds for different percussion instruments, providing a fun and engaging way to experience drumming.
+The Interactive Alphabet Simulation is an interactive web-based application that sounds out the letters of the alphabet as well as the phenomes. The user can press the keys on the keyboard or click on the virtual letter buttons. The app displays colorful distinction between each letters, providing a fun and engaging way to experience the alphabet.
 
-This version of the Drum Kit is built using JavaScript, HTML, and CSS, offering both keyboard and mouse interactivity for a rich, responsive experience.
+This version of the alphabet is built using JavaScript, HTML, and CSS, offering both keyboard and mouse interactivity for a rich, responsive experience.
 
 ## Features
-- Virtual Drum Kit: The simulation features virtual drum pads that represent various percussion instruments (e.g., kick drum, snare, hi-hat, toms, cymbals).
-- Keyboard and Mouse Input: Users can play the drum kit either by pressing the corresponding keys on the keyboard or by clicking on the drum pads with a mouse.
-- Realistic Sounds: Each drum pad is linked to a high-quality sound sample, simulating the real drum kit experience.
-- Visual Feedback: Drum pads light up when clicked or when the corresponding key is pressed, providing visual feedback during play.
+- Alphabet letter buttons: The simulation features virtual buttons that represent various letters in the alphabet.
+- Keyboard and Mouse Input: Users can learn the alphabet by either pressing the corresponding keys on the keyboard or by clicking on the letters with a mouse.
+- Realistic Sounds: Each letter is linked to a high-quality sound sample, simulating the entire alphabet.
+- Visual Feedback: buttons light up when clicked or when the corresponding key is pressed, providing visual feedback during play.
 - Responsive Design: The drum kit interface adapts to different screen sizes, ensuring it works on both desktops and mobile devices.
 
 ## How to Play
 1. Open the index.html file in your web browser.
-2. The page will display a drum kit with several drum pads (e.g., kick, snare, toms, cymbals).
+2. The page will display the alphabetical letters.
 3. You can either:
-    - Click on a drum pad to produce the corresponding sound.
-    - Press the designated keyboard key to play the sound (e.g., 'Q' for the kick drum, 'W' for the snare, etc.).
-4. The drum pad will light up when pressed or clicked, providing feedback to the user.
-5. Enjoy creating rhythms and experimenting with different sounds!
+    - Click on a letter to produce the corresponding sound or press the designated keyboard key to play the sound of the letter.
+    - Click on the sound button below the letter to get the phenome sound of that letter.
+4. The letters will light up when pressed or clicked, providing feedback to the user.
+5. Enjoy learning the alphabet through visual aid and sound!
 
 ## Installation 
 
