@@ -16,41 +16,91 @@ footer {
   font-family: sans-serif;
 }
 
-.w {
-background-image: url(./images/crash.png);
+.A {
+  color: #DA0463;
 }
+.B {
+  color: blue;
+}
+.C {
+  color: yellow ;
+}
+.D {
+  color: green;
+}
+.E {
+  color: orange;
+}
+.F {
+  color: purple;
+}
+.G {
+  color: lightgreen;
+}
+.H {
+  color: orangered;
+}
+.I {
+  color: darkblue;
+}
+.J {
+  color: palevioletred;
+}
+.K {
+  color: darkorange;
+}
+.L {
+  color: turquoise;
+}
+  .M {
+    color: red;
+  }
+  .N {
+    color: darkorchid;
+  }
+  .O {
+    color: greenyellow;
+  }
+  .P {
+    color: brown;
+  }
+  .Q {
+    color: olive;
+  }
+  .R {
+    color: rosybrown;
+  }
+  .S {
+    color: salmon;
+  }
+  .T {
+    color: teal;
+  }
+  .U {
+    color: wheat;
+  }
+  .V {
+    color: maroon;
+  }         
+  .W {
+    color: palegoldenrod;
+  }
+  .X {
+    color: plum;
+  }
+  .Y {
+    color: midnightblue;
+  }
+  .Z {
+    color: forestgreen;
+  }                                                                                                   
  
-.a {
-  background-image: url(./images/kick.png);
-}
-
-.s {
-  background-image: url(./images/snare.png)
-}
-
-.d {
-  background-image: url(./images/tom1.png)
-}
-
-.j {
-  background-image: url(./images/tom2.png)
-}
-
-.k {
-  background-image: url(./images/tom3.png)
-}
-
-.l {
-  background-image: url(./images/tom4.png)
-}
 
 .set {
-  margin: 10% auto;
-}
-
-.game-over {
-  background-color: red;
-  opacity: 0.8;
+  margin: 0 5% 5% 5%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .pressed {
@@ -58,18 +108,13 @@ background-image: url(./images/crash.png);
   opacity: 0.5;
 }
 
-.red {
-  color: red;
-}
-
-.drum {
+#alphabet {
   outline: none;
   border: 10px solid #404B69;
   font-size: 5rem;
   font-family: 'Arvo', cursive;
   line-height: 2;
   font-weight: 900;
-  color: #DA0463;
   text-shadow: 3px 0 #DBEDF3;
   border-radius: 15px;
   display: inline-block;
@@ -78,4 +123,29 @@ background-image: url(./images/crash.png);
   text-align: center;
   margin: 10px;
   background-color: white;
+  cursor: pointer;
+}
+
+.Phenome {
+  border: 10px solid #404B69;
+  font-family: 'Arvo', cursive;
+  line-height: 2;
+  font-weight: 900;
+  color: #404B69;
+  text-shadow: 3px 0 #DBEDF3;
+  border-radius: 15px;
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  justify-content: center;
+  margin: 10px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.letter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
