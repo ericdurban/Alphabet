@@ -1,3 +1,6 @@
+/* ===============
+       BODY
+=================*/
 body {
   text-align: center;
   background-color: #283149;
@@ -13,6 +16,9 @@ html, body {
   margin: 0;
 } 
 
+/* ===============
+      HEADING
+=================*/
 h1 {
   font-size: 5rem;
   color: #DBEDF3;
@@ -39,8 +45,29 @@ h1 {
   height: 2rem;
   width: 7rem;
   border-radius: 5px;
+  border-color: #DBEDF3;
 }
 
+/* ===============
+ ALPHABET GALLERY
+=================*/
+.set {
+  margin: 0 5% 5% 5%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.letter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+/* ===============
+ ALPHABET BUTTONS
+=================*/
 .A {
   color: #DA0463;
 }
@@ -120,14 +147,6 @@ h1 {
     color: forestgreen;
   }                                                                                                   
  
-
-.set {
-  margin: 0 5% 5% 5%;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
 .pressed {
   box-shadow: 0 3px 4px 0 #DBEDF3;
   opacity: 0.5;
@@ -145,36 +164,133 @@ h1 {
   width: 150px;
   height: 150px;
   text-align: center;
-  margin: 8% 0% 0% 0% ;
+
   background-color: white;
   cursor: pointer;
+}
+
+/* ===============
+ PHONICS BUTTONS
+=================*/
+.text-container {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin: 0% 0% 8% 0%;
+  color: white;
+  background-color: none;
+}
+
+.text-container p{
+  color: white;
+  margin: 0;
+  padding: 0;
 }
 
 .phoneme {
   border: 10px solid #404B69;
   font-family: 'Arvo', cursive;
-  line-height: 2;
-  font-weight: 900;
   color: #404B69;
   text-shadow: 3px 0 #DBEDF3;
   border-radius: 15px;
   display: inline-block;
-  width: 150px;
-  height: 50px;
+  width: 35%;
+  height: 100%;
   text-align: center;
   justify-content: center;
-  margin: 10px;
   background-color: white;
   cursor: pointer;
   pointer-events: all;
 }
 
-.letter-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.modalBtn {
+  border: 10px solid #404B69;
+  font-family: 'Arvo', cursive;
+  color: #404B69;
+  text-shadow: 3px 0 #DBEDF3;
+  border-radius: 15px;
+  display: inline-block;
+  width: 35%;
+  height: 100%;
+  text-align: center;
+  justify-content: center;
+  background-color: white;
+  cursor: pointer;
+  pointer-events: all;
 }
 
+/* ===============
+      MODAL
+=================*/
+/* Basic modal styles */
+.modal {
+  display: none;
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7); 
+  padding-top: 60px;
+  overflow: hidden;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; 
+  max-width: 800px;
+  position: relative;
+  overflow: hidden;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#videoFrame {
+  width: 100%; /* Fill the available space */
+  height: auto;
+  max-height: 80vh; /* Limit the video height */
+  object-fit: contain; /* Ensure the video scales correctly without cropping */
+  display: block;
+  margin: 0 auto; /* Center video */
+}
+
+#videoPlayer {
+  width: 100%; /* Make the video take up 100% of the container's width */
+  height: auto; /* Adjust height based on the aspect ratio */
+}
+
+.video-credit {
+  font-size: .8rem;
+  color: #888;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.video-credit a {
+  color: #00f;
+  text-decoration: underline;
+}
+
+/* ===============
+      FOOTER
+=================*/
 footer {
   color: #DBEDF3;
   font-family: sans-serif;

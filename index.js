@@ -1,35 +1,78 @@
-// Event Listener for detecting button press and triggers functions.
+/* ===============
+   CASE FILTERS
+=================*/
+document.getElementById("uppercase-filter").addEventListener("click", function() {
+    toggleLetterCase('uppercase');
+})
+
+document.getElementById("lowercase-filter").addEventListener("click", function() {
+    toggleLetterCase('lowercase');
+})
+// Add 'both' filter to show both at the same time   
+
+
+function toggleLetterCase(caseType) {
+    var letterButtons = document.querySelectorAll('.letter');
+
+    letterButtons.forEach(function(button) {
+        var letter = button.innerHTML;
+
+        switch(caseType) {
+            case 'uppercase':
+                button.innerHTML = letter.toUpperCase();
+                break;
+            case 'lowercase':
+                button.innerHTML = letter.toLowerCase();
+                break;
+            // Add 'both' filter to show both at the same time   
+        }
+    })
+}
+
+
+/* ===============
+    BUTTON  
+EVENT LISTENERS
+=================*/
+// Event Listener for detecting button press for letter buttons.
 for (var i=0; i<document.querySelectorAll(".letter").length; i++) {
     document.querySelectorAll(".letter")[i].addEventListener("click", function() { 
-        var buttonInnerHTML= this.innerHTML; // Stores a corresponding letter(HTML) with each clicked button 
-        makeSoundByKey(buttonInnerHTML); // Plays the sound for each clicked button based on the letter(HTML)
-        buttonAnimationKey(buttonInnerHTML); // Triggers button animation for each clicked button based on the letter(HTML)
+        var buttonInnerHTML= this.innerHTML; 
+        makeSoundByKey(buttonInnerHTML); 
+        buttonAnimationKey(buttonInnerHTML); 
     });
 }
 
+// Event Listener for detecting keyboard press for letter buttons. 
+document.addEventListener("keydown", function(event) {
+    var key = event.key.toUpperCase();
+    if (key >= 'a' && key <= 'z') {
+    makeSoundByKey(event.key); 
+    buttonAnimation(event.key); 
+    }
+  });
+  
+
+// Event Listener for detecting button press for phonic sounds.
 document.addEventListener("DOMContentLoaded", function() {
     for (var i = 0; i < document.querySelectorAll(".phoneme").length; i++) {
     document.querySelectorAll(".phoneme")[i].addEventListener("click", function(event) { 
-        event.preventDefault(); // Prevent any default action from happening.
+        event.preventDefault(); 
         event.stopPropagation(); 
 
-        var letter = event.target.getAttribute("data-letter");
+        var letter = this.getAttribute("data-letter");
         makeSoundByLetter(letter);
-        buttonAnimationLetter(letter); // Now triggering button animation for the "phoneme" button as well.
+        buttonAnimationLetter(letter);
     });
 }
 });
 
-// Event Listener for detecting keyboard press and triggers same functions. 
-document.addEventListener("keydown", function(event) {
-  var key = event.key.toUpperCase();
-  if (key >= 'a' && key <= 'z') {
-  makeSoundByKey(event.key); // Plays sound for each assigned key on keyboard pressed
-  buttonAnimation(event.key); // Triggers button animation for each assigned key on keyboard pressed
-  }
-});
 
-// Function that assigns a sound to the corresponding letter phoneme button. 
+/* ===============
+   LETTER SOUND 
+    ASSIGNMENT
+=================*/
+// Function that assigns a sound to the corresponding big letter button. 
 function makeSoundByKey(key) {
     key = key.toUpperCase();
     switch (key) {
@@ -114,6 +157,7 @@ function makeSoundByKey(key) {
 }
 }
 
+// Function that assigns a sound to the corresponding letter phoneme button
 function makeSoundByLetter(letter) {
     switch(letter) {
         case "A": 
@@ -197,43 +241,14 @@ function makeSoundByLetter(letter) {
     }
 }
 
-document.getElementById("uppercase-filter").addEventListener("click", function() {
-    toggleLetterCase('uppercase');
-})
 
-document.getElementById("lowercase-filter").addEventListener("click", function() {
-    toggleLetterCase('lowercase');
-})
-document.getElementById("both-filter").addEventListener("click", function() {
-    toggleLetterCase('both');
-})
-
-function toggleLetterCase(caseType) {
-    var letterButtons = document.querySelectorAll('.letter');
-
-    letterButtons.forEach(function(button) {
-        var letter = button.innerHTML;
-
-        switch(caseType) {
-            case 'uppercase':
-                button.innerHTML = letter.toUpperCase();
-                break;
-            case 'lowercase':
-                button.innerHTML = letter.toLowerCase();
-                break;
-            case 'both':
-                button.innerHTML = letter;
-                break;       
-        }
-    })
-}
-
-
-// Function that adds visual animation to each letter/button. 
+/* ===============
+ BUTTON ANIMATION
+=================*/
+// Function that adds visual animation to each big letter button. 
 function buttonAnimationKey(currentkey) {
     currentkey = currentkey.toUpperCase();
     var activeButton=document.querySelector("." + currentkey);
-    // If the letter button is clicked, we apply animation to it.
     if (activeButton) {
         activeButton.classList.add("pressed");
         setTimeout(function() {
@@ -242,16 +257,53 @@ function buttonAnimationKey(currentkey) {
     }
 }
 
+// Function that adds visual animation to each phoneme button. 
 function buttonAnimationLetter(currentLetter) {
     // Check if there is a phoneme button for the current letter and apply animation.
     var phonemeButton = document.querySelector(`button[data-letter='${currentLetter}']`);
     if (phonemeButton) {
         phonemeButton.classList.add("pressed");
-        void phonemeButton.offsetWidth;  // Trigger reflow to reset animation
+        void phonemeButton.offsetWidth;
         phonemeButton.classList.add("pressed");
-
         setTimeout(function() {
             phonemeButton.classList.remove("pressed");
         }, 100);
     }
 }
+
+
+/* ===============
+ MODAL ANIMATION
+=================*/
+// Get modal, close button, and modal button elements
+var modal = document.getElementById("videoModal");
+var closeButton = document.getElementsByClassName("close")[0];
+var modalBtns = document.querySelectorAll(".modalBtn");
+var videoPlayer = document.getElementById("videoPlayer");
+var videoSource = document.getElementById("videoSource");
+
+// Open the modal when a modal button is clicked
+modalBtns.forEach(function(btn) {
+  btn.addEventListener("click", function() {
+    var videoFile = this.getAttribute("data-video");
+    videoSource.src = videoFile; // Set the video source dynamically
+    videoPlayer.load(); // Reload the video player to reflect the new video source
+    modal.style.display = "block"; // Show the modal
+  });
+});
+
+// Close the modal when the close button is clicked
+closeButton.addEventListener("click", function() {
+  modal.style.display = "none"; // Hide the modal
+  videoPlayer.pause(); // Pause the video
+  videoPlayer.currentTime = 0; // Reset the video to the beginning
+});
+
+// Close the modal if the user clicks anywhere outside the modal
+window.addEventListener("click", function(event) {
+  if (event.target === modal) {
+    modal.style.display = "none";
+    videoPlayer.pause();
+    videoPlayer.currentTime = 0;
+  }
+});
