@@ -3,214 +3,215 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Learn the Alphabet!</title>
-  <link rel="stylesheet" href="/Alphabet/styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn Your ABCs!</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
   
   <!-- HEADER -->
-  <h1 id="title">Le<span class="highlightedA">a</span>rn Your <span class="highlightedA">A</span><span class="highlightedB">B</span><span class="highlightedC">C</span>'s!</h1>
+  <h1 id="title">Le<span class="highlightedA">a</span>rn Your <span class="highlightedA">A</span><span class="highlightedB">B</span><span class="highlightedC">C</span>s!</h1>
 
-  <!-- sET A TOGGLE TO SWITH FROM LOWERCASE TO UPPERCASE -->
-   <div>
-    <button class="toggleButton" id="lowercase-filter">lowercase</button>
-    <button class="toggleButton" id="uppercase-filter">UPPERCASE</button>
-   </div>
+  <!-- TOGGLES FOR LOWERCASE AND UPPERCASE -->
+   <section>
+    <button class="toggleButton" id="lowercase-filter" aria-label="lowercase-filter button">lowercase</button>
+    <button class="toggleButton" id="uppercase-filter" aria-label="uppercase-filter button">UPPERCASE</button>
+   </section>
   <!-- SET A BUTTON TO RENDER NEW PAGE FOR EACH LETTER
    SHOWING PICTURES RELATED TO THAT LETTER -->
 
   <!-- INTERACTIVE ALPHABET SIMULATION -->
-  <div class="set">
+  <section class="set">
     <div class="letter-container">
-      <button class="A letter" id="alphabet">A</button>
+      <button class="A letter" id="alphabet" aria-label="letter button">A</button>
       <p class="text-container">Phonic: 
         <button class="phoneme" aria-label="Phoneme button" data-letter="A"><i class="fa-solid fa-volume-high"></i></button>
         <button class="modalBtn" aria-label="Modal button" data-video="videos/a.mp4"><i class="fa-regular fa-face-grin-beam"></i></button>
       </p>
     </div>
     <div class="letter-container">
-      <button class="B letter" id="alphabet">B</button>
+      <button class="B letter" id="alphabet" aria-label="letter button">B</button>
         <p class="text-container">Phonic:
           <button class="phoneme" aria-label="Phoneme button" data-letter="B"><i class="fa-solid fa-volume-high"></i></button>
           <button class="modalBtn" aria-label="Modal button" data-video="videos/b.mp4"><i class="fa-regular fa-face-grin-beam"></i></button>
         </p>
     </div>
     <div class="letter-container">
-      <button class="C letter" id="alphabet">C</button>
+      <button class="C letter" id="alphabet" aria-label="letter button">C</button>
         <p class="text-container">Phonic:
           <button class="phoneme" aria-label="Phoneme button" data-letter="C"><i class="fa-solid fa-volume-high"></i></button>
           <button class="modalBtn" aria-label="Modal button" data-video="videos/c.mp4"><i class="fa-regular fa-face-grin-beam"></i></button>
         </p>
     </div>
     <div class="letter-container">
-      <button class="D letter" id="alphabet">D</button>
+      <button class="D letter" id="alphabet" aria-label="letter button">D</button>
       <p class="text-container">Phonic:
         <button class="phoneme" aria-label="Phoneme button" data-letter="D"><i class="fa-solid fa-volume-high"></i></button>
         <button class="modalBtn" aria-label="Modal button" data-video="videos/d.mp4"><i class="fa-regular fa-face-grin-beam"></i></button>
       </p>
     </div>
     <div class="letter-container">
-      <button class="E letter" id="alphabet">E</button>
+      <button class="E letter" id="alphabet" aria-label="letter button">E</button>
       <p class="text-container">Phonic:
         <button class="phoneme" aria-label="Phoneme button" data-letter="E"><i class="fa-solid fa-volume-high"></i></button>
         <button class="modalBtn" aria-label="Modal button" data-video="videos/e.mp4"><i class="fa-regular fa-face-grin-beam"></i></button>
       </p>
     </div>
     <div class="letter-container">
-      <button class="F letter" id="alphabet">F</button>
+      <button class="F letter" id="alphabet" aria-label="letter button">F</button>
       <p class="text-container">Phonic:
         <button class="phoneme" aria-label="Phoneme button" data-letter="F"><i class="fa-solid fa-volume-high"></i></button>
         <button class="modalBtn" aria-label="Modal button" data-video="videos/f.mp4"><i class="fa-regular fa-face-grin-beam"></i></button>
       </p>
     </div>
     <div class="letter-container">
-      <button class="G letter" id="alphabet">G</button>
+      <button class="G letter" id="alphabet" aria-label="letter button">G</button>
       <p class="text-container">Phonic:
         <button class="phoneme" aria-label="Phoneme button" data-letter="G"><i class="fa-solid fa-volume-high"></i></button>
         <button class="modalBtn" aria-label="Modal button" data-video="videos/g.mp4"><i class="fa-regular fa-face-grin-beam"></i></button>
       </p>
     </div>
     <div class="letter-container">
-      <button class="H letter" id="alphabet">H</button>
+      <button class="H letter" id="alphabet" aria-label="letter button">H</button>
       <p class="text-container">Phonic:
         <button class="phoneme" aria-label="Phoneme button" data-letter="H"><i class="fa-solid fa-volume-high"></i></button>
         <button class="modalBtn" aria-label="Modal button" data-video="videos/h.mp4"><i class="fa-regular fa-face-grin-beam"></i></button>
       </p>
     </div>
     <div class="letter-container">
-      <button class="I letter" id="alphabet">I</button>
+      <button class="I letter" id="alphabet" aria-label="letter button">I</button>
       <p class="text-container">Phonic:
         <button class="phoneme" aria-label="Phoneme button" data-letter="I"><i class="fa-solid fa-volume-high"></i></button>
         <button class="modalBtn" aria-label="Modal button" data-video="videos/i.mp4"><i class="fa-regular fa-face-grin-beam"></i></button>
       </p>
     </div>
     <div class="letter-container">
-      <button class="J letter" id="alphabet">J</button>
+      <button class="J letter" id="alphabet" aria-label="letter button">J</button>
       <p class="text-container">Phonic:
         <button class="phoneme" aria-label="Phoneme button" data-letter="J"><i class="fa-solid fa-volume-high"></i></button>
         <button class="modalBtn" aria-label="Modal button" data-video="videos/j.mp4"><i class="fa-regular fa-face-grin-beam"></i></button>
       </p>
     </div>
     <div class="letter-container">
-      <button class="K letter" id="alphabet">K</button>
+      <button class="K letter" id="alphabet" aria-label="letter button">K</button>
       <p class="text-container">Phonic:
         <button class="phoneme" aria-label="Phoneme button" data-letter="K"><i class="fa-solid fa-volume-high"></i></button>
         <button class="modalBtn" aria-label="Modal button" data-video="videos/k.mp4"><i class="fa-regular fa-face-grin-beam"></i></button>
       </p>
     </div>
     <div class="letter-container">
-      <button class="L letter" id="alphabet">L</button>
+      <button class="L letter" id="alphabet" aria-label="letter button">L</button>
       <p class="text-container">Phonic:
         <button class="phoneme" aria-label="Phoneme button" data-letter="L"><i class="fa-solid fa-volume-high"></i></button>
         <button class="modalBtn" aria-label="Modal button" data-video="videos/l.mp4"><i class="fa-regular fa-face-grin-beam"></i></button>
       </p>
     </div>
     <div class="letter-container">
-      <button class="M letter" id="alphabet">M</button>
+      <button class="M letter" id="alphabet" aria-label="letter button">M</button>
       <p class="text-container">Phonic:
         <button class="phoneme" aria-label="Phoneme button" data-letter="M"><i class="fa-solid fa-volume-high"></i></button>
         <button class="modalBtn" aria-label="Modal button" data-video="videos/m.mp4"><i class="fa-regular fa-face-grin-beam"></i></button>
       </p>
     </div>
     <div class="letter-container">
-      <button class="N letter" id="alphabet">N</button>
+      <button class="N letter" id="alphabet" aria-label="letter button">N</button>
       <p class="text-container">Phonic:
         <button class="phoneme" aria-label="Phoneme button" data-letter="N"><i class="fa-solid fa-volume-high"></i></button>
         <button class="modalBtn" aria-label="Modal button" data-video="videos/n.mp4"><i class="fa-regular fa-face-grin-beam"></i></button>
       </p>
     </div>
     <div class="letter-container">
-      <button class="O letter" id="alphabet">O</button>
+      <button class="O letter" id="alphabet" aria-label="letter button">O</button>
       <p class="text-container">Phonic:
         <button class="phoneme" aria-label="Phoneme button" data-letter="O"><i class="fa-solid fa-volume-high"></i></button>
         <button class="modalBtn" aria-label="Modal button" data-video="videos/o.mp4"><i class="fa-regular fa-face-grin-beam"></i></button>
       </p>
     </div>
     <div class="letter-container">
-      <button class="P letter" id="alphabet">P</button>
+      <button class="P letter" id="alphabet" aria-label="letter button">P</button>
       <p class="text-container">Phonic:
         <button class="phoneme" aria-label="Phoneme button" data-letter="P"><i class="fa-solid fa-volume-high"></i></button>
         <button class="modalBtn" aria-label="Modal button" data-video="videos/p.mp4"><i class="fa-regular fa-face-grin-beam"></i></button>
       </p>
     </div>
     <div class="letter-container">
-      <button class="Q letter" id="alphabet">Q</button>
+      <button class="Q letter" id="alphabet" aria-label="letter button">Q</button>
       <p class="text-container">Phonic:
         <button class="phoneme" aria-label="Phoneme button" data-letter="Q"><i class="fa-solid fa-volume-high"></i></button>
         <button class="modalBtn" aria-label="Modal button" data-video="videos/qx.mp4"><i class="fa-regular fa-face-grin-beam"></i></button>
       </p>
     </div>
     <div class="letter-container">
-      <button class="R letter" id="alphabet">R</button>
+      <button class="R letter" id="alphabet" aria-label="letter button">R</button>
       <p class="text-container">Phonic:
         <button class="phoneme" aria-label="Phoneme button" data-letter="R"><i class="fa-solid fa-volume-high"></i></button>
         <button class="modalBtn" aria-label="Modal button" data-video="videos/r.mp4"><i class="fa-regular fa-face-grin-beam"></i></button>
       </p>
     </div>
     <div class="letter-container">
-      <button class="S letter" id="alphabet">S</button>
+      <button class="S letter" id="alphabet" aria-label="letter button">S</button>
       <p class="text-container">Phonic:
         <button class="phoneme" aria-label="Phoneme button" data-letter="S"><i class="fa-solid fa-volume-high"></i></button>
         <button class="modalBtn" aria-label="Modal button" data-video="videos/s.mp4"><i class="fa-regular fa-face-grin-beam"></i></button>
       </p>
     </div>
     <div class="letter-container">
-      <button class="T letter" id="alphabet">T</button>
+      <button class="T letter" id="alphabet" aria-label="letter button">T</button>
       <p class="text-container">Phonic:
         <button class="phoneme" aria-label="Phoneme button" data-letter="T"><i class="fa-solid fa-volume-high"></i></button>
         <button class="modalBtn" aria-label="Modal button" data-video="videos/t.mp4"><i class="fa-regular fa-face-grin-beam"></i></button>
       </p>
     </div>
     <div class="letter-container">
-      <button class="U letter" id="alphabet">U</button>
+      <button class="U letter" id="alphabet" aria-label="letter button">U</button>
       <p class="text-container">Phonic:
         <button class="phoneme" aria-label="Phoneme button" data-letter="U"><i class="fa-solid fa-volume-high"></i></button>
         <button class="modalBtn" aria-label="Modal button" data-video="videos/u.mp4"><i class="fa-regular fa-face-grin-beam"></i></button>
       </p>
     </div>
     <div class="letter-container">
-      <button class="V letter" id="alphabet">V</button>
+      <button class="V letter" id="alphabet" aria-label="letter button">V</button>
       <p class="text-container">Phonic:
         <button class="phoneme" aria-label="Phoneme button" data-letter="V"><i class="fa-solid fa-volume-high"></i></button>
         <button class="modalBtn" aria-label="Modal button" data-video="videos/v.mp4"><i class="fa-regular fa-face-grin-beam"></i></button>
       </p>
     </div>
     <div class="letter-container">
-      <button class="W letter" id="alphabet">W</button>
+      <button class="W letter" id="alphabet" aria-label="letter button">W</button>
       <p class="text-container">Phonic:
         <button class="phoneme" aria-label="Phoneme button" data-letter="W"><i class="fa-solid fa-volume-high"></i></button>
         <button class="modalBtn" aria-label="Modal button" data-video="videos/w.mp4"><i class="fa-regular fa-face-grin-beam"></i></button>
       </p>
     </div>
     <div class="letter-container">
-      <button class="X letter" id="alphabet">X</button>
+      <button class="X letter" id="alphabet" aria-label="letter button">X</button>
       <p class="text-container">Phonic:
         <button class="phoneme" aria-label="Phoneme button" data-letter="X"><i class="fa-solid fa-volume-high"></i></button>
         <button class="modalBtn" aria-label="Modal button" data-video="videos/qx.mp4"><i class="fa-regular fa-face-grin-beam"></i></button>
       </p>
     </div>
     <div class="letter-container">
-      <button class="Y letter" id="alphabet">Y</button>
+      <button class="Y letter" id="alphabet" aria-label="letter button">Y</button>
       <p class="text-container">Phonic:
         <button class="phoneme" aria-label="Phoneme button" data-letter="Y"><i class="fa-solid fa-volume-high"></i></button>
         <button class="modalBtn" aria-label="Modal button" data-video="videos/y.mp4"><i class="fa-regular fa-face-grin-beam"></i></button>
       </p>
     </div>
     <div class="letter-container">
-      <button class="Z letter" id="alphabet">Z</button>
+      <button class="Z letter" id="alphabet" aria-label="letter button">Z</button>
       <p class="text-container">Phonic:
         <button class="phoneme" aria-label="Phoneme button" data-letter="Z"><i class="fa-solid fa-volume-high"></i></button>
         <button class="modalBtn" aria-label="Modal button" data-video="videos/z.mp4"><i class="fa-regular fa-face-grin-beam"></i></button>
       </p>
     </div>
-  </div>
+  </section>
 
   <!-- MODAL -->
-  <div id="videoModal" class="modal">
-    <div class="modal-content">
+  <section id="videoModal" class="modal">
+    <section class="modal-content">
       <span class="close">&times;</span>
       <video id="videoPlayer" controls>
         <source id="videoSource" src="" type="video/mp4"  >
@@ -222,8 +223,8 @@
         <a href="https://www.youtube.com/watch?v=ZoYtgO9gLJI" target="_blank">
           "The Secret to Pronouncing C"</a> by Clear English Corner with Keenyn Rhodes.          
       </p>
-    </div>
-  </div>
+    </section>
+  </section>
 
   <!-- FOOTER -->
   <footer>

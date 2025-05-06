@@ -46,9 +46,9 @@ for (var i=0; i<document.querySelectorAll(".letter").length; i++) {
 // Event Listener for detecting keyboard press for letter buttons. 
 document.addEventListener("keydown", function(event) {
     var key = event.key.toUpperCase();
-    if (key >= 'a' && key <= 'z') {
-    makeSoundByKey(event.key); 
-    buttonAnimation(event.key); 
+    if (key >= 'A' && key <= 'Z') {
+    makeSoundByKey(key); 
+    buttonAnimationKey(key); 
     }
   });
   

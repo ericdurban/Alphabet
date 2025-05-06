@@ -1,6 +1,10 @@
 /* ===============
        BODY
 =================*/
+* {
+  box-sizing: border-box;
+}
+
 body {
   text-align: center;
   background-color: #283149;
@@ -160,13 +164,17 @@ h1 {
   font-weight: 900;
   text-shadow: 3px 0 #DBEDF3;
   border-radius: 15px;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   width: 150px;
   height: 150px;
-  text-align: center;
-
   background-color: white;
   cursor: pointer;
+  margin: 0 auto;
+  padding: 0;
+  line-height: 1;
 }
 
 /* ===============
