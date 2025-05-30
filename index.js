@@ -75,180 +75,31 @@ document.addEventListener("DOMContentLoaded", function() {
 // Function that assigns a sound to the corresponding big letter button. 
 function makeSoundByKey(key) {
     key = key.toUpperCase();
-    switch (key) {
-        case "A":
-            var SoundKey= new Audio('sounds/a.mp3'); SoundKey.play(); 
-            break;
-        case "B":
-            var SoundKey= new Audio('sounds/b.mp3'); SoundKey.play(); 
-            break;
-        case "C":
-            var SoundKey= new Audio('sounds/c.mp3'); SoundKey.play(); 
-            break;
-        case "D":
-            var SoundKey= new Audio('sounds/d.mp3'); SoundKey.play(); 
-            break;
-        case "E":
-            var SoundKey= new Audio('sounds/e.mp3'); SoundKey.play(); 
-            break;
-        case "F":
-            var SoundKey= new Audio('sounds/f.mp3'); SoundKey.play(); 
-            break;
-        case "G":
-            var SoundKey= new Audio('sounds/g.mp3'); SoundKey.play(); 
-            break;
-        case "H":
-            var SoundKey= new Audio('sounds/h.mp3'); SoundKey.play(); 
-            break;
-        case "I":
-            var SoundKey= new Audio('sounds/i.mp3'); SoundKey.play(); 
-            break;
-        case "J":
-            var SoundKey= new Audio('sounds/j.mp3'); SoundKey.play(); 
-            break;
-        case "K":
-            var SoundKey= new Audio('sounds/k.mp3'); SoundKey.play(); 
-            break;
-        case "L":
-            var SoundKey= new Audio('sounds/l.mp3'); SoundKey.play(); 
-            break;
-        case "M":
-            var SoundKey= new Audio('sounds/m.mp3'); SoundKey.play(); 
-            break;
-        case "N":
-            var SoundKey= new Audio('sounds/n.mp3'); SoundKey.play(); 
-            break;
-        case "O":
-            var SoundKey= new Audio('sounds/o.mp3'); SoundKey.play(); 
-            break;
-        case "P":
-            var SoundKey= new Audio('sounds/p.mp3'); SoundKey.play(); 
-            break;
-        case "Q":
-            var SoundKey= new Audio('sounds/q.mp3'); SoundKey.play(); 
-            break;
-        case "R":
-            var SoundKey= new Audio('sounds/r.mp3'); SoundKey.play(); 
-            break;
-        case "S":
-            var SoundKey= new Audio('sounds/s.mp3'); SoundKey.play(); 
-            break;
-        case "T":
-            var SoundKey= new Audio('sounds/t.mp3'); SoundKey.play(); 
-            break;
-        case "U":
-            var SoundKey= new Audio('sounds/u.mp3'); SoundKey.play(); 
-            break;
-        case "V":
-            var SoundKey= new Audio('sounds/v.mp3'); SoundKey.play(); 
-            break;
-        case "W":
-            var SoundKey= new Audio('sounds/w.mp3'); SoundKey.play(); 
-            break;
-        case "X":
-            var SoundKey= new Audio('sounds/x.mp3'); SoundKey.play(); 
-            break;
-        case "Y":
-            var SoundKey= new Audio('sounds/y.mp3'); SoundKey.play(); 
-            break;
-        case "Z":
-            var SoundKey= new Audio('sounds/z.mp3'); SoundKey.play(); 
-            break;
-}
-}
-
-// Function that assigns a sound to the corresponding letter phoneme button
-function makeSoundByLetter(letter) {
-    switch(letter) {
-        case "A": 
-            var SoundLetter= new Audio('sounds/Phonemes/a.mp3'); SoundLetter.play();
-            break;
-        case "B":
-            var SoundLetter= new Audio('sounds/Phonemes/b.mp3'); SoundLetter.play(); 
-            break;
-        case "C":
-            var SoundLetter= new Audio('sounds/Phonemes/c.mp3'); SoundLetter.play(); 
-            break;
-        case "D":
-            var SoundLetter= new Audio('sounds/Phonemes/d.mp3'); SoundLetter.play(); 
-            break;
-        case "E":
-            var SoundLetter= new Audio('sounds/Phonemes/e.mp3'); SoundLetter.play(); 
-            break;
-        case "F":
-            var SoundLetter= new Audio('sounds/Phonemes/f.mp3'); SoundLetter.play(); 
-            break;
-        case "G":
-            var SoundLetter= new Audio('sounds/Phonemes/g.mp3'); SoundLetter.play(); 
-            break;
-        case "H":
-            var SoundLetter= new Audio('sounds/Phonemes/h.mp3'); SoundLetter.play(); 
-            break;
-        case "I":
-            var SoundLetter= new Audio('sounds/Phonemes/i.mp3'); SoundLetter.play(); 
-            break;
-        case "J":
-            var SoundLetter= new Audio('sounds/Phonemes/j.mp3'); SoundLetter.play(); 
-            break;
-        case "K":
-            var SoundLetter= new Audio('sounds/Phonemes/k.mp3'); SoundLetter.play(); 
-            break;
-        case "L":
-            var SoundLetter= new Audio('sounds/Phonemes/l.mp3'); SoundLetter.play(); 
-            break;
-        case "M":
-            var SoundLetter= new Audio('sounds/Phonemes/m.mp3'); SoundLetter.play(); 
-            break;
-        case "N":
-            var SoundLetter= new Audio('sounds/Phonemes/n.mp3'); SoundLetter.play(); 
-            break;
-        case "O":
-            var SoundLetter= new Audio('sounds/Phonemes/o.mp3'); SoundLetter.play(); 
-            break;
-        case "P":
-            var SoundLetter= new Audio('sounds/Phonemes/p.mp3'); SoundLetter.play(); 
-            break;
-        case "Q":
-            var SoundLetter= new Audio('sounds/Phonemes/q.mp3'); SoundLetter.play(); 
-            break;
-        case "R":
-            var SoundLetter= new Audio('sounds/Phonemes/r.mp3'); SoundLetter.play(); 
-            break;
-        case "S":
-            var SoundLetter= new Audio('sounds/Phonemes/s.mp3'); SoundLetter.play(); 
-            break;
-        case "T":
-            var SoundLetter= new Audio('sounds/Phonemes/t.mp3'); SoundLetter.play(); 
-            break;
-        case "U":
-            var SoundLetter= new Audio('sounds/Phonemes/u.mp3'); SoundLetter.play(); 
-            break;
-        case "V":
-            var SoundLetter= new Audio('sounds/Phonemes/v.mp3'); SoundLetter.play(); 
-            break;
-        case "W":
-            var SoundLetter= new Audio('sounds/Phonemes/w.mp3'); SoundLetter.play(); 
-            break;
-        case "X":
-            var SoundLetter= new Audio('sounds/Phonemes/x.mp3'); SoundLetter.play(); 
-            break;
-        case "Y":
-            var SoundLetter= new Audio('sounds/Phonemes/y.mp3'); SoundLetter.play(); 
-            break;
-        case "Z":
-            var SoundLetter= new Audio('sounds/Phonemes/z.mp3'); SoundLetter.play(); 
-            break;
+    const validKeys = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    if (validKeys.includes(key)) {
+        const SoundKey= new Audio(`sounds/${key.toLowerCase()}.mp3`); 
+        SoundKey.play();
     }
 }
 
+
+// Function that assigns a sound to the corresponding letter phoneme button
+function makeSoundByLetter(letter) {
+    letter = letter.toUpperCase();
+    const validLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    if (validLetters.includes(letter)) {
+        SoundLetter= new Audio('sounds/Phonemes/a.mp3'); 
+        SoundLetter.play();
+    }
+}
 
 /* ===============
  BUTTON ANIMATION
 =================*/
 // Function that adds visual animation to each big letter button. 
-function buttonAnimationKey(currentkey) {
-    currentkey = currentkey.toUpperCase();
-    var activeButton=document.querySelector("." + currentkey);
+function buttonAnimationKey(currentKey) {
+    currentKey = currentKey.toUpperCase();
+    var activeButton=document.querySelector("." + currentKey);
     if (activeButton) {
         activeButton.classList.add("pressed");
         setTimeout(function() {
@@ -288,15 +139,15 @@ modalBtns.forEach(function(btn) {
     var videoFile = this.getAttribute("data-video");
     videoSource.src = videoFile; // Set the video source dynamically
     videoPlayer.load(); // Reload the video player to reflect the new video source
-    modal.style.display = "block"; // Show the modal
+    modal.style.display = "block"; 
   });
 });
 
 // Close the modal when the close button is clicked
 closeButton.addEventListener("click", function() {
-  modal.style.display = "none"; // Hide the modal
-  videoPlayer.pause(); // Pause the video
-  videoPlayer.currentTime = 0; // Reset the video to the beginning
+  modal.style.display = "none"; 
+  videoPlayer.pause(); 
+  videoPlayer.currentTime = 0; 
 });
 
 // Close the modal if the user clicks anywhere outside the modal
